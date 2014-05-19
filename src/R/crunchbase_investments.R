@@ -177,9 +177,8 @@ relax(rdp,
 ### Let's try using d3 within R!
 library(d3Network)
 
-regions <- as.data.frame(unique(stack(region_mobile[,1:2])[,1]))
-
 d3SimpleNetwork(Data=region_mobile[,c(1,2,5)],
                 fontsize=15,
-                file="mobie_region_graph_test.html")
+                file="mobile_region_graph_test.html")
+### modified this file in order to have a better visualization
 ### currently working on a way to incorporate the node size attribute in d3
